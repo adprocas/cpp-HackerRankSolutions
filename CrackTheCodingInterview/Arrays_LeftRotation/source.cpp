@@ -24,8 +24,6 @@
 using namespace std;
 
 vector<int> array_left_rotation(vector<int> a, int n, int k) {
-    vector<int> newA;
-    
     for(int i = 0; i < k; ++i) {
         int x = a.at(0);
         
