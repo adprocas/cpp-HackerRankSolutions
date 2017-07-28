@@ -35,6 +35,15 @@ Let's say we pop through those, but in the meantime we have added numbers 4, 5, 
 
 All we have to do is create the newest on top stack again, and pop or top (delete or read) accordingly.
 
+We would end up with this...
+
+| Oldest        |
+| ------------- |
+| 7             |
+| 6             |
+| 5             |
+| 4             |
+
 So, every time you call pop() or front() from the queue you are going to want to check if the newest on top stack has anything in it.  If it doesn't, you'll have to build it.
 
 Doing this made my solution pass for all test cases, it uses less memory, and traverses the stacks way less (we're not re-creating stacks every time we push to the queue)
