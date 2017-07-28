@@ -37,7 +37,7 @@ All we have to do is create the newest on top stack again, and pop or top (delet
 
 We would end up with this...
 
-| Oldest        |
+| Newest        |
 | ------------- |
 | 7             |
 | 6             |
