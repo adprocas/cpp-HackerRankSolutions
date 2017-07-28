@@ -25,7 +25,7 @@ public:
 		//this lets us go through the stack
 		//as if we are traversing backwards
         if(stack_newest_on_top.empty()) {
-            buildStack(stack_newest_on_top);
+            buildStack();
         }
         
         stack_newest_on_top.pop();
@@ -38,15 +38,13 @@ public:
 		//check for an empty newest on top stack
 		//here too
         if(stack_newest_on_top.empty()) {
-            buildStack(stack_newest_on_top);
+            buildStack();
         }
         
         return stack_newest_on_top.top();
     }
     
-    void buildStack(stack<int> &stack1) {
-        stack<int> newStack;
-        
+    void buildStack() {
         while(!stack_oldest_on_top.empty()) {
             stack_newest_on_top.push(stack_oldest_on_top.top());
             stack_oldest_on_top.pop();
